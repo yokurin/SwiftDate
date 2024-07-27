@@ -156,7 +156,8 @@ extension Calendar.Component {
 		case .nanosecond:        return 1 << 15
 		case .calendar:          return 1 << 16
 		case .timeZone:          return 1 << 17
-		}
+        case .isLeapMonth:        return NSError() as! UInt // pass build
+        }
 	}
 	
 	internal init?(rawValue: UInt) {
